@@ -8,12 +8,15 @@ let package = Package(
         .library(name: "Passbase",
                  targets: ["Passbase", "Microblink"]),
     ],
+    dependencies: [
+        .package(name: "Lottie", url: "https://github.com/airbnb/lottie-ios.git", from: "3.2.1")  
+    ],
     targets: [
         .binaryTarget(name: "Passbase",
-                      url: "https://button.passbase.com/__ios/Passbase_2.7.4.zip",
-                      checksum: "22c4cbe3e80bbecd7ea868f0a5f6a03453e1d862c003d1e26d6ee17500ea0911"),
+                      url: "https://button.passbase.com/__ios/dev/Passbase_2.13.2.zip",
+                      checksum: "bfb067c0df1c97cb84cd71acc1272d25837c29e0f61601c4922e7cbc5be57ed5"),
         .binaryTarget(name: "Microblink",
-                      url: "https://button.passbase.com/__ios/Microblink_5.11.0.zip",
-                      checksum: "4583840c2d3cf926830943979c8efc77386265547c0a352d20086fffc2e9ca93"),
+                      url: "https://button.passbase.com/__ios/Microblink_5.16.1.zip",
+                      checksum: "33af45af2820e2bc0ff929ade3714c09c923ed03a1606d5219e16b9f87ddeeed"),
     ]
 )
