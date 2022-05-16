@@ -15,7 +15,7 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "FleksySDK",
+            name: "PassbaseSDK",
             dependencies: ["Passbase", "Lottie", "Microblink"]
         ),
 )
