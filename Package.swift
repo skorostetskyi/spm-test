@@ -3,7 +3,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "PassbaseSPM",
+    name: "PassbaseSDK",
     products: [
         .library(name: "PassbaseSDK",
                  targets: ["PassbaseSDK"]),
