@@ -6,7 +6,7 @@ let package = Package(
     name: "Passbase",
     products: [
         .library(name: "Passbase",
-                 targets: ["Passbase", "Microblink", "Lottie"]),
+                 targets: ["Passbase", "Microblink"]),
     ],
     dependencies: [
         .package(name: "Lottie", url: "https://github.com/airbnb/lottie-ios.git", from: "3.2.1")  
