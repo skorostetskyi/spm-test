@@ -16,7 +16,7 @@ let package = Package(
         .package(
             name: "Passbase", 
             url: "https://github.com/skorostetskyi/passbase-sdk-sp.git", 
-            .exact("2.13.2")),
+            from: "2.13.0"), 
         .package(
             name: "Lottie", 
             url: "https://github.com/airbnb/lottie-ios.git", 
@@ -24,7 +24,7 @@ let package = Package(
         .package(
             name: "Microblink", 
             url: "https://github.com/skorostetskyi/microblink-sdk-sp.git", 
-            .exact("5.16.0")),
+            from: "5.16.0"), 
     ],
     targets: [
         .target(
