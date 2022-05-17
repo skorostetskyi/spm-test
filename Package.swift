@@ -20,13 +20,12 @@ let package = Package(
         .binaryTarget(name: "Microblink",
                       url: "https://button.passbase.com/__ios/Microblink_5.16.1.zip",
                       checksum: "33af45af2820e2bc0ff929ade3714c09c923ed03a1606d5219e16b9f87ddeeed"),
+
         .target(name: "PassbaseTargets",
                 dependencies: [
-                    .target(name: "Passbase", condition: .when(platforms: .some([.iOS]))),
-                    .target(name: "Lottie", condition: .when(platforms: .some([.iOS]))),
-                    .target(name: "Microblink", condition: .when(platforms: .some([.iOS])))
-                ],
-                path: "PassbaseTargets"
-        )
+                    .product(name: "Lottie", package: "Lottie"),
+                    .product(name: "Passbase", package: "Passbase"),
+                    .product(name: "Microblink", package: "Microblink"),
+                ])
     ]
 )
