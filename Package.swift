@@ -11,7 +11,7 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(name: "Lottie", url: "https://github.com/airbnb/lottie-ios.git", from: "3.2.1")  
+        .package(name: "Lottie", url: "https://github.com/airbnb/lottie-ios.git", from: "3.2.1"), 
     ],
     targets: [
         .binaryTarget(name: "Passbase",
