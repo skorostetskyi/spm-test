@@ -21,11 +21,7 @@ let package = Package(
                       url: "https://button.passbase.com/__ios/Microblink_5.16.1.zip",
                       checksum: "33af45af2820e2bc0ff929ade3714c09c923ed03a1606d5219e16b9f87ddeeed"),
         .target(name: "PassbaseTargets",
-                dependencies: [
-                    .target(name: "Passbase", condition: .when(platforms: .some([.iOS]))),
-                    .target(name: "Lottie", condition: .when(platforms: .some([.iOS]))),
-                    .target(name: "Microblink", condition: .when(platforms: .some([.iOS])))
-                ],
+                dependencies: ["Passbase", "Lottie", "Microblink"],
                 path: "Sources/PassbaseTargets"
         )
     ]
